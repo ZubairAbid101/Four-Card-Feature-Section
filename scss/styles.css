@@ -1,0 +1,134 @@
+/* Grid Container Styling */
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* Grid Item Styling */
+#item-1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+#item-2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+#item-3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+#item-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+.grid-item {
+  width: 350px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px;
+}
+
+@media (max-width: 500px) {
+  #entire-container {
+    width: 90vw;
+  }
+  #grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  #item-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #item-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  #item-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #item-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .grid-item {
+    width: auto;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#entire-container {
+  padding: 20px;
+}
+
+#space-container {
+  height: 50px;
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  text-align: center;
+}
+
+h1:nth-of-type(2) {
+  color: hsl(234, 12%, 34%);
+  font-weight: 600;
+}
+
+#entire-container > p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+}
+
+img {
+  float: right;
+}/*# sourceMappingURL=styles.css.map */
